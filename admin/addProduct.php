@@ -57,7 +57,7 @@
           </div>
         </div>
         
-            <form action="addProductProcess.php" method="POST">
+            <form action="addProductProcess.php" method="POST" enctype="multipart/form-data">
                 <div class="card-body">
                   <div class="form-group">
                     <label for="prod_name">Product Name</label>
@@ -71,18 +71,16 @@
                     <label for="prod_stock">Product Stock</label>
                     <input required type="number" class="form-control" id="prod_stock" name="prod_stock">
                   </div>
-                <!--   <div class="form-group">
+                  <div class="form-group">
                     <label for="exampleInputFile">File input</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
+                        <input type="file" class="custom-file-input" id="exampleInputFile" name="prod_image" accept="image/*">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
-                      <div class="input-group-append">
-                        <span class="input-group-text">Upload</span>
-                      </div>
+                
                     </div>
-                  </div>-->
+                  </div>
                 </div>
                 <!-- /.card-body -->
 

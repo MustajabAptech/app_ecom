@@ -32,17 +32,18 @@ CREATE TABLE `products` (
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`prod_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 /*Data for the table `products` */
 
 insert  into `products`(`prod_id`,`prod_name`,`prod_price`,`prod_stock`,`prod_img`,`added_by`,`update_by`,`status`,`created_at`,`updated_at`) values 
-(1,'Apple',12000,10,NULL,1,NULL,1,'2024-06-28 15:10:37',NULL),
-(2,'Vivo',4500,450,NULL,1,NULL,1,'2024-06-28 15:10:59',NULL),
-(3,'Samsang',600,120,NULL,1,NULL,1,'2024-06-28 15:11:17',NULL),
-(5,'TCL Updated',45,5,NULL,1,2,1,'2024-06-28 15:25:43','2024-06-28 16:01:03'),
-(6,'VGA',450,7800,NULL,1,NULL,1,'2024-06-28 15:42:44',NULL),
-(7,'Smart Watch',45600,2,NULL,2,NULL,1,'2024-06-28 15:43:54',NULL);
+(1,'Apple',12000,10,'prod_image/image-removebg-preview.png',1,NULL,1,'2024-06-28 15:10:37',NULL),
+(2,'Vivo',4500,450,'prod_image/image-removebg-preview.png',1,NULL,1,'2024-06-28 15:10:59',NULL),
+(3,'Samsang',600,120,'prod_image/image-removebg-preview.png',1,NULL,1,'2024-06-28 15:11:17',NULL),
+(5,'TCL Updated latest',45,5,'prod_image/image-removebg-preview.png',1,1,1,'2024-06-28 15:25:43','2024-07-01 14:24:37'),
+(6,'VGA',450,7800,'prod_image/image-removebg-preview.png',1,NULL,1,'2024-06-28 15:42:44',NULL),
+(7,'Smart Watch',45600,2,'prod_image/image-removebg-preview.png',2,NULL,1,'2024-06-28 15:43:54',NULL),
+(8,'Shoes',1111,222,'prod_image/image-removebg-preview.png',1,NULL,1,'2024-07-01 14:44:30',NULL);
 
 /*Table structure for table `users` */
 

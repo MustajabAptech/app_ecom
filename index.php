@@ -176,6 +176,7 @@
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
+        <a href="viewCart.php" class="btn  btn-outline-primary"> View Cart</a>
       </div>
     </div>
   </nav>
@@ -247,14 +248,13 @@
         $result = mysqli_query($connection,$query);
         if($result->num_rows>0){
             while($row = mysqli_fetch_assoc($result)){
-
                 ?>
                 <div class="col-lg-4">
-                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                  <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="admin/<?php echo $row['prod_img'];?>" alt="">
                   <h2 class="fw-normal"><?php echo $row['prod_name'];?></h2>
                   <p>Price: <?php echo $row['prod_price'];?></p>
                   <p>Stock: <?php echo $row['prod_stock'];?></p>
-                  <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                  <p><a class="btn btn-secondary" href="productDetails.php?id=<?php echo $row['prod_id'];?>">View details &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <?php
             }
